@@ -7,7 +7,7 @@
         <Alias>dados</Alias>
         <Key />
         <Name>dados</Name>
-        <PathData>D:\Cursos\Stimusoft\Aula05\dados.json</PathData>
+        <PathData>D:\Fontes\Cursos\CursoStimuSoft\ModuloBasico\Aula05\dados.json</PathData>
       </dados>
     </Databases>
     <DataSources isList="true" count="1">
@@ -540,6 +540,7 @@
         </ColumnHeaderBandEstilo>
         <DataBandEstilo Ref="53" type="DataBand" isKey="true">
           <Brush>Transparent</Brush>
+          <BusinessObjectGuid isNull="true" />
           <ClientRectangle>0,14.8,19,0.4</ClientRectangle>
           <Components isList="true" count="3">
             <Text19 Ref="54" type="Text" isKey="true">
@@ -635,10 +636,10 @@
     <value>Stimulsoft.Report.Dll</value>
   </ReferencedAssemblies>
   <ReportAlias>Report</ReportAlias>
-  <ReportChanged>12/5/2019 10:47:40 PM</ReportChanged>
+  <ReportChanged>12/8/2019 8:10:21 PM</ReportChanged>
   <ReportCreated>12/2/2019 9:56:40 PM</ReportCreated>
-  <ReportFile>D:\Cursos\Stimusoft\Aula05\ReportJson.mrt</ReportFile>
-  <ReportGuid>64d10e68417f441aaab36603eae21fee</ReportGuid>
+  <ReportFile>D:\Fontes\Cursos\CursoStimuSoft\ModuloBasico\Aula05\Aula05_Thiago.mrt</ReportFile>
+  <ReportGuid>2bc91786ebaa4803b6b91a5015444aaf</ReportGuid>
   <ReportName>Report</ReportName>
   <ReportUnit>Centimeters</ReportUnit>
   <ReportVersion>2019.4.2.0</ReportVersion>

@@ -7,7 +7,7 @@
         <Alias>dados</Alias>
         <Key />
         <Name>dados</Name>
-        <PathData>D:\Cursos\Stimusoft\Aula04\dados.xlsx</PathData>
+        <PathData>D:\Fontes\Cursos\CursoStimuSoft\ModuloBasico\Aula04\dados.xlsx</PathData>
       </dados>
     </Databases>
     <DataSources isList="true" count="2">
@@ -586,10 +586,10 @@
     <value>Stimulsoft.Report.Dll</value>
   </ReferencedAssemblies>
   <ReportAlias>Report</ReportAlias>
-  <ReportChanged>12/2/2019 11:05:53 PM</ReportChanged>
+  <ReportChanged>12/8/2019 8:08:52 PM</ReportChanged>
   <ReportCreated>12/2/2019 9:56:40 PM</ReportCreated>
-  <ReportFile>D:\Cursos\Stimusoft\Aula04\ReportExcel.mrt</ReportFile>
-  <ReportGuid>f22c5686dc6c40e092e49dd0c67c7237</ReportGuid>
+  <ReportFile>D:\Fontes\Cursos\CursoStimuSoft\ModuloBasico\Aula04\Aula04Excel_Thiago.mrt</ReportFile>
+  <ReportGuid>856b502b01e143e8a16c3fb7b46ec258</ReportGuid>
   <ReportName>Report</ReportName>
   <ReportUnit>Centimeters</ReportUnit>
   <ReportVersion>2019.4.2.0</ReportVersion>

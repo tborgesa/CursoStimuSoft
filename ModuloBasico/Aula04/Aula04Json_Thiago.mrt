@@ -7,7 +7,7 @@
         <Alias>dados</Alias>
         <Key />
         <Name>dados</Name>
-        <PathData>D:\Cursos\Stimusoft\Aula04\dados.json</PathData>
+        <PathData>D:\Fontes\Cursos\CursoStimuSoft\ModuloBasico\Aula04\dados.json</PathData>
       </dados>
     </Databases>
     <DataSources isList="true" count="2">
@@ -586,10 +586,10 @@
     <value>Stimulsoft.Report.Dll</value>
   </ReferencedAssemblies>
   <ReportAlias>Report</ReportAlias>
-  <ReportChanged>12/2/2019 11:06:20 PM</ReportChanged>
+  <ReportChanged>12/8/2019 8:09:21 PM</ReportChanged>
   <ReportCreated>12/2/2019 9:56:40 PM</ReportCreated>
-  <ReportFile>D:\Cursos\Stimusoft\Aula04\ReportJson.mrt</ReportFile>
-  <ReportGuid>2b757a387dcd4a9ca37b7e36c34763e2</ReportGuid>
+  <ReportFile>D:\Fontes\Cursos\CursoStimuSoft\ModuloBasico\Aula04\Aula04Json_Thiago.mrt</ReportFile>
+  <ReportGuid>fe2c1d13fb604bceb6d14b22bb99f1ce</ReportGuid>
   <ReportName>Report</ReportName>
   <ReportUnit>Centimeters</ReportUnit>
   <ReportVersion>2019.4.2.0</ReportVersion>
