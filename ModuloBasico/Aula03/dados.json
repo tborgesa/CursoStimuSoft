@@ -1,0 +1,64 @@
+{
+  "dados": [
+    {
+      "empregador": "Microsoft",
+      "empregado": "José da Silva",
+      "referente": "11/2019",
+      "competencia": "novembro/2019",
+      "funcao": "Programador .Net",
+      "salario": 1000,
+      "inss": 8,
+      "total": 920
+    },
+	{
+      "empregador": "Microsoft",
+      "empregado": "José da Silva",
+      "referente": "11/2019",
+      "competencia": "novembro/2019",
+      "funcao": "Programador .Net",
+      "salario": 1000,
+      "inss": 8,
+      "total": 920
+    },
+    {
+      "empregador": "Apple",
+      "empregado": "Pedro Otavio",
+      "referente": "11/2019",
+      "competencia": "novembro/2019",
+      "funcao": "Programador Objectve-C",
+      "salario": 2000,
+      "inss": 8,
+      "total": 920
+    },
+	{
+      "empregador": "Apple",
+      "empregado": "Pedro Otavio",
+      "referente": "11/2019",
+      "competencia": "novembro/2019",
+      "funcao": "Programador Objectve-C",
+      "salario": 2000,
+      "inss": 8,
+      "total": 920
+    },
+    {
+      "empregador": "Amazon",
+      "empregado": "Maria das Graças",
+      "referente": "11/2019",
+      "competencia": "novembro/2019",
+      "funcao": "Programador C++",
+      "salario": 1800,
+      "inss": 8,
+      "total": 920
+    },
+    {
+      "empregador": "Amazon",
+      "empregado": "Maria das Graças",
+      "referente": "11/2019",
+      "competencia": "novembro/2019",
+      "funcao": "Programador C++",
+      "salario": 1800,
+      "inss": 8,
+      "total": 920
+    }
+  ]
+}

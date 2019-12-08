@@ -1,0 +1,679 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<StiSerializer version="1.02" type="Net" application="StiReport">
+  <Dictionary Ref="1" type="Dictionary" isKey="true">
+    <BusinessObjects isList="true" count="0" />
+    <Databases isList="true" count="1">
+      <dados Ref="2" type="Stimulsoft.Report.Dictionary.StiJsonDatabase" isKey="true">
+        <Alias>dados</Alias>
+        <Key />
+        <Name>dados</Name>
+        <PathData>D:\Cursos\Stimusoft\Aula05\dados.json</PathData>
+      </dados>
+    </Databases>
+    <DataSources isList="true" count="1">
+      <dados Ref="3" type="DataTableSource" isKey="true">
+        <Alias>dados</Alias>
+        <Columns isList="true" count="4">
+          <value>Nome,System.String</value>
+          <value>Email,System.String</value>
+          <value>Contato,System.String</value>
+          <value>Dinheiro,System.Decimal</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Key>d767f6aaebb646f98623f19b727684f1</Key>
+        <Name>dados</Name>
+        <NameInSource>dados.dados</NameInSource>
+      </dados>
+    </DataSources>
+    <Relations isList="true" count="0" />
+    <Report isRef="0" />
+    <Resources isList="true" count="0" />
+    <Variables isList="true" count="0" />
+  </Dictionary>
+  <EngineVersion>EngineV2</EngineVersion>
+  <GlobalizationStrings isList="true" count="0" />
+  <Key>c70bc7f1e5484e69a0840aad470c1fd2</Key>
+  <MetaTags isList="true" count="0" />
+  <Pages isList="true" count="1">
+    <Page1 Ref="4" type="Page" isKey="true">
+      <Border>None;Black;2;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <Components isList="true" count="11">
+        <HeaderBandOrdenacao Ref="5" type="HeaderBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,0.4,19,0.8</ClientRectangle>
+          <Components isList="true" count="1">
+            <Text6 Ref="6" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0,19,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,16,Bold</Font>
+              <Guid>fabe6320f99a44178be43646f6457a82</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0.4,0,0,0</Margins>
+              <Name>Text6</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Text>Relatório melhores preços (Ordenação)</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text6>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Name>HeaderBandOrdenacao</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+        </HeaderBandOrdenacao>
+        <ColumnHeaderOrdenacao Ref="7" type="Stimulsoft.Report.Components.StiColumnHeaderBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,2,19,0.8</ClientRectangle>
+          <Components isList="true" count="3">
+            <Text1 Ref="8" type="Text" isKey="true">
+              <Border>Bottom;Black;1;Solid;False;4;Black</Border>
+              <Brush>Silver</Brush>
+              <ClientRectangle>0,0,10.6,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,12,Bold</Font>
+              <Guid>7765bdeb405a430680e4e9c31882a52d</Guid>
+              <Interaction Ref="9" type="Stimulsoft.Report.Components.StiInteraction" isKey="true">
+                <SortingColumn>DataBandOrdenacao.Nome</SortingColumn>
+              </Interaction>
+              <Margins>0.4,0,0,0</Margins>
+              <Name>Text1</Name>
+              <Page isRef="4" />
+              <Parent isRef="7" />
+              <Text>Nome</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text1>
+            <Text3 Ref="10" type="Text" isKey="true">
+              <Border>Bottom;Black;1;Solid;False;4;Black</Border>
+              <Brush>Silver</Brush>
+              <ClientRectangle>16.4,0,2.6,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,12,Bold</Font>
+              <Guid>94cbd59805a6406c9981598453908a87</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Interaction Ref="11" type="Stimulsoft.Report.Components.StiInteraction" isKey="true">
+                <SortingColumn>DataBandOrdenacao.Dinheiro</SortingColumn>
+              </Interaction>
+              <Margins>0.4,0,0,0</Margins>
+              <Name>Text3</Name>
+              <Page isRef="4" />
+              <Parent isRef="7" />
+              <Text>Preço</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="12" type="CurrencyFormat" isKey="true">
+                <DecimalDigits>2</DecimalDigits>
+                <DecimalSeparator>,</DecimalSeparator>
+                <GroupSeparator>.</GroupSeparator>
+                <NegativePattern>9</NegativePattern>
+                <PositivePattern>2</PositivePattern>
+                <Symbol>R$</Symbol>
+              </TextFormat>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text3>
+            <Text4 Ref="13" type="Text" isKey="true">
+              <Border>Bottom;Black;1;Solid;False;4;Black</Border>
+              <Brush>Silver</Brush>
+              <ClientRectangle>10.6,0,5.8,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,12,Bold</Font>
+              <Guid>0253dd92ba39413591b5cf1914eb53fb</Guid>
+              <Interaction Ref="14" type="Stimulsoft.Report.Components.StiInteraction" isKey="true">
+                <SortingColumn>DataBandOrdenacao.Email</SortingColumn>
+              </Interaction>
+              <Margins>0.4,0,0,0</Margins>
+              <Name>Text4</Name>
+              <Page isRef="4" />
+              <Parent isRef="7" />
+              <Text>Email</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text4>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Name>ColumnHeaderOrdenacao</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+        </ColumnHeaderOrdenacao>
+        <DataBandOrdenacao Ref="15" type="DataBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <BusinessObjectGuid isNull="true" />
+          <ClientRectangle>0,3.6,19,0.4</ClientRectangle>
+          <Components isList="true" count="3">
+            <Text7 Ref="16" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0,10.6,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,11</Font>
+              <Guid>f8e9c3f69a52438eb902e4f2562b9ac5</Guid>
+              <Margins>0.4,0,0,0</Margins>
+              <Name>Text7</Name>
+              <Page isRef="4" />
+              <Parent isRef="15" />
+              <Text>{dados.Nome}</Text>
+              <TextBrush>Black</TextBrush>
+              <VertAlignment>Center</VertAlignment>
+            </Text7>
+            <Text10 Ref="17" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>16.4,0,2.6,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,11</Font>
+              <Guid>9e5ff2f7af8a45e3803ebfcd7c5009ea</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0.4,0,0,0</Margins>
+              <Name>Text10</Name>
+              <Page isRef="4" />
+              <Parent isRef="15" />
+              <Text>{dados.Dinheiro}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="18" type="CurrencyFormat" isKey="true">
+                <DecimalDigits>2</DecimalDigits>
+                <DecimalSeparator>,</DecimalSeparator>
+                <GroupSeparator>.</GroupSeparator>
+                <NegativePattern>9</NegativePattern>
+                <PositivePattern>2</PositivePattern>
+                <Symbol>R$</Symbol>
+              </TextFormat>
+              <VertAlignment>Center</VertAlignment>
+            </Text10>
+            <Text8 Ref="19" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>10.6,0,5.8,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,11</Font>
+              <Guid>d7f86ef2626f4fd8a62616368165f9f8</Guid>
+              <Margins>0.4,0,0,0</Margins>
+              <Name>Text8</Name>
+              <Page isRef="4" />
+              <Parent isRef="15" />
+              <Text>{dados.Email}</Text>
+              <TextBrush>Black</TextBrush>
+              <VertAlignment>Center</VertAlignment>
+            </Text8>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <DataRelationName isNull="true" />
+          <DataSourceName>dados</DataSourceName>
+          <Filters isList="true" count="0" />
+          <Name>DataBandOrdenacao</Name>
+          <OddStyle>Zebrado</OddStyle>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <Sort isList="true" count="0" />
+        </DataBandOrdenacao>
+        <FooterBandOrdenacao Ref="20" type="FooterBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,4.8,19,0.4</ClientRectangle>
+          <Components isList="true" count="1">
+            <HorizontalLinePrimitive1 Ref="21" type="HorizontalLinePrimitive" isKey="true">
+              <ClientRectangle>0,0.2,19,0.0254</ClientRectangle>
+              <Color>Black</Color>
+              <Conditions isList="true" count="0" />
+              <EndCap Ref="22" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </EndCap>
+              <Name>HorizontalLinePrimitive1</Name>
+              <Page isRef="4" />
+              <Parent isRef="20" />
+              <Size>2</Size>
+              <StartCap Ref="23" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </StartCap>
+            </HorizontalLinePrimitive1>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Name>FooterBandOrdenacao</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+        </FooterBandOrdenacao>
+        <HeaderBandFiltro Ref="24" type="HeaderBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,6,19,0.8</ClientRectangle>
+          <Components isList="true" count="1">
+            <Text2 Ref="25" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0,19,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,16,Bold</Font>
+              <Guid>d8ae88892c6844e99b6754692583a3c3</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0.4,0,0,0</Margins>
+              <Name>Text2</Name>
+              <Page isRef="4" />
+              <Parent isRef="24" />
+              <Text>Relatório melhores preços (Filtro)</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text2>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Guid>26fa29c9ab094abe9f58746bcddf8299</Guid>
+          <Name>HeaderBandFiltro</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+        </HeaderBandFiltro>
+        <ColumnHeaderFiltro Ref="26" type="Stimulsoft.Report.Components.StiColumnHeaderBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,7.6,19,0.8</ClientRectangle>
+          <Components isList="true" count="3">
+            <Text5 Ref="27" type="Text" isKey="true">
+              <Border>Bottom;Black;1;Solid;False;4;Black</Border>
+              <Brush>Silver</Brush>
+              <ClientRectangle>0,0,10.6,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,12,Bold</Font>
+              <Guid>5d989ae72fe44db79f55131d143d66ff</Guid>
+              <Interaction Ref="28" type="Stimulsoft.Report.Components.StiInteraction" isKey="true">
+                <SortingColumn>DataBandFiltro.Nome</SortingColumn>
+              </Interaction>
+              <Margins>0.4,0,0,0</Margins>
+              <Name>Text5</Name>
+              <Page isRef="4" />
+              <Parent isRef="26" />
+              <Text>Nome</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text5>
+            <Text9 Ref="29" type="Text" isKey="true">
+              <Border>Bottom;Black;1;Solid;False;4;Black</Border>
+              <Brush>Silver</Brush>
+              <ClientRectangle>16.4,0,2.6,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,12,Bold</Font>
+              <Guid>d1745741de1a46d594766230922da8e3</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Interaction Ref="30" type="Stimulsoft.Report.Components.StiInteraction" isKey="true">
+                <SortingColumn>DataBandFiltro.Dinheiro</SortingColumn>
+              </Interaction>
+              <Margins>0.4,0,0,0</Margins>
+              <Name>Text9</Name>
+              <Page isRef="4" />
+              <Parent isRef="26" />
+              <Text>Preço</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="31" type="CurrencyFormat" isKey="true">
+                <DecimalDigits>2</DecimalDigits>
+                <DecimalSeparator>,</DecimalSeparator>
+                <GroupSeparator>.</GroupSeparator>
+                <NegativePattern>9</NegativePattern>
+                <PositivePattern>2</PositivePattern>
+                <Symbol>R$</Symbol>
+              </TextFormat>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text9>
+            <Text11 Ref="32" type="Text" isKey="true">
+              <Border>Bottom;Black;1;Solid;False;4;Black</Border>
+              <Brush>Silver</Brush>
+              <ClientRectangle>10.6,0,5.8,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,12,Bold</Font>
+              <Guid>b77efece1a6f4eaab003432596466afa</Guid>
+              <Interaction Ref="33" type="Stimulsoft.Report.Components.StiInteraction" isKey="true">
+                <SortingColumn>DataBandFiltro.Email</SortingColumn>
+              </Interaction>
+              <Margins>0.4,0,0,0</Margins>
+              <Name>Text11</Name>
+              <Page isRef="4" />
+              <Parent isRef="26" />
+              <Text>Email</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text11>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Guid>34c2aa0deae746f3952f1218356b6022</Guid>
+          <Name>ColumnHeaderFiltro</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+        </ColumnHeaderFiltro>
+        <DataBandFiltro Ref="34" type="DataBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <BusinessObjectGuid isNull="true" />
+          <ClientRectangle>0,9.2,19,0.4</ClientRectangle>
+          <Components isList="true" count="3">
+            <Text12 Ref="35" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0,10.6,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,11</Font>
+              <Guid>9672474bb48547a2a4a749c19334aaf6</Guid>
+              <Margins>0.4,0,0,0</Margins>
+              <Name>Text12</Name>
+              <Page isRef="4" />
+              <Parent isRef="34" />
+              <Text>{dados.Nome}</Text>
+              <TextBrush>Black</TextBrush>
+              <VertAlignment>Center</VertAlignment>
+            </Text12>
+            <Text13 Ref="36" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>16.4,0,2.6,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,11</Font>
+              <Guid>99c1d95dc4b846be9e906e1fa0c263b0</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0.4,0,0,0</Margins>
+              <Name>Text13</Name>
+              <Page isRef="4" />
+              <Parent isRef="34" />
+              <Text>{dados.Dinheiro}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="37" type="CurrencyFormat" isKey="true">
+                <DecimalDigits>2</DecimalDigits>
+                <DecimalSeparator>,</DecimalSeparator>
+                <GroupSeparator>.</GroupSeparator>
+                <NegativePattern>9</NegativePattern>
+                <PositivePattern>2</PositivePattern>
+                <Symbol>R$</Symbol>
+              </TextFormat>
+              <VertAlignment>Center</VertAlignment>
+            </Text13>
+            <Text14 Ref="38" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>10.6,0,5.8,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,11</Font>
+              <Guid>1de2f3721ee447c9818efb6654cc1ace</Guid>
+              <Margins>0.4,0,0,0</Margins>
+              <Name>Text14</Name>
+              <Page isRef="4" />
+              <Parent isRef="34" />
+              <Text>{dados.Email}</Text>
+              <TextBrush>Black</TextBrush>
+              <VertAlignment>Center</VertAlignment>
+            </Text14>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <DataRelationName isNull="true" />
+          <DataSourceName>dados</DataSourceName>
+          <Filters isList="true" count="1">
+            <value>Dinheiro,LessThanOrEqualTo,_x0037_80,,Numeric</value>
+          </Filters>
+          <Guid>50bbe93556f84266a0b4f2fbb2223223</Guid>
+          <Name>DataBandFiltro</Name>
+          <OddStyle>Zebrado</OddStyle>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <Sort isList="true" count="0" />
+        </DataBandFiltro>
+        <FooterBandFiltro Ref="39" type="FooterBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,10.4,19,0.4</ClientRectangle>
+          <Components isList="true" count="1">
+            <HorizontalLinePrimitive2 Ref="40" type="HorizontalLinePrimitive" isKey="true">
+              <ClientRectangle>0,0.2,19,0.0254</ClientRectangle>
+              <Color>Black</Color>
+              <Conditions isList="true" count="0" />
+              <EndCap Ref="41" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </EndCap>
+              <Guid>95559e3dbd3b442eb628143c2de13f85</Guid>
+              <Name>HorizontalLinePrimitive2</Name>
+              <Page isRef="4" />
+              <Parent isRef="39" />
+              <Size>2</Size>
+              <StartCap Ref="42" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </StartCap>
+            </HorizontalLinePrimitive2>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Guid>d411676cb2594dddbca4267dd98110e4</Guid>
+          <Name>FooterBandFiltro</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+        </FooterBandFiltro>
+        <HeaderBandEstilo Ref="43" type="HeaderBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,11.6,19,0.8</ClientRectangle>
+          <Components isList="true" count="1">
+            <Text15 Ref="44" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0,19,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,16,Bold</Font>
+              <Guid>62982dab78714e1e9e86a6a05de9a108</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0.4,0,0,0</Margins>
+              <Name>Text15</Name>
+              <Page isRef="4" />
+              <Parent isRef="43" />
+              <Text>Relatório melhores preços (Estilo condicional)</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text15>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Guid>de76e1abde4d48d1a9bc7891b0e0ef2f</Guid>
+          <Name>HeaderBandEstilo</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+        </HeaderBandEstilo>
+        <ColumnHeaderBandEstilo Ref="45" type="Stimulsoft.Report.Components.StiColumnHeaderBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,13.2,19,0.8</ClientRectangle>
+          <Components isList="true" count="3">
+            <Text16 Ref="46" type="Text" isKey="true">
+              <Border>Bottom;Black;1;Solid;False;4;Black</Border>
+              <Brush>Silver</Brush>
+              <ClientRectangle>0,0,10.6,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,12,Bold</Font>
+              <Guid>f056435194e44d8da83dc290519f9dd0</Guid>
+              <Interaction Ref="47" type="Stimulsoft.Report.Components.StiInteraction" isKey="true">
+                <SortingColumn>DataBandEstilo.Nome</SortingColumn>
+              </Interaction>
+              <Margins>0.4,0,0,0</Margins>
+              <Name>Text16</Name>
+              <Page isRef="4" />
+              <Parent isRef="45" />
+              <Text>Nome</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text16>
+            <Text17 Ref="48" type="Text" isKey="true">
+              <Border>Bottom;Black;1;Solid;False;4;Black</Border>
+              <Brush>Silver</Brush>
+              <ClientRectangle>16.4,0,2.6,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,12,Bold</Font>
+              <Guid>9997c70bd6dc461fa0a3db0f235b504f</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Interaction Ref="49" type="Stimulsoft.Report.Components.StiInteraction" isKey="true">
+                <SortingColumn>DataBandEstilo.Dinheiro</SortingColumn>
+              </Interaction>
+              <Margins>0.4,0,0,0</Margins>
+              <Name>Text17</Name>
+              <Page isRef="4" />
+              <Parent isRef="45" />
+              <Text>Preço</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="50" type="CurrencyFormat" isKey="true">
+                <DecimalDigits>2</DecimalDigits>
+                <DecimalSeparator>,</DecimalSeparator>
+                <GroupSeparator>.</GroupSeparator>
+                <NegativePattern>9</NegativePattern>
+                <PositivePattern>2</PositivePattern>
+                <Symbol>R$</Symbol>
+              </TextFormat>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text17>
+            <Text18 Ref="51" type="Text" isKey="true">
+              <Border>Bottom;Black;1;Solid;False;4;Black</Border>
+              <Brush>Silver</Brush>
+              <ClientRectangle>10.6,0,5.8,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,12,Bold</Font>
+              <Guid>b6493311d16d42b790ea73e76434bb50</Guid>
+              <Interaction Ref="52" type="Stimulsoft.Report.Components.StiInteraction" isKey="true">
+                <SortingColumn>DataBandEstilo.Email</SortingColumn>
+              </Interaction>
+              <Margins>0.4,0,0,0</Margins>
+              <Name>Text18</Name>
+              <Page isRef="4" />
+              <Parent isRef="45" />
+              <Text>Email</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text18>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Guid>25ce2f4495154852bb5e75b9f12a758b</Guid>
+          <Name>ColumnHeaderBandEstilo</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+        </ColumnHeaderBandEstilo>
+        <DataBandEstilo Ref="53" type="DataBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,14.8,19,0.4</ClientRectangle>
+          <Components isList="true" count="3">
+            <Text19 Ref="54" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0,10.6,0.4</ClientRectangle>
+              <Conditions isList="true" count="1">
+                <value>dados.Dinheiro,LessThanOrEqualTo,_x0037_80,,Numeric,ForestGreen,Transparent,Calibri_x002C_11_x002C_Bold,True,False,,,None</value>
+              </Conditions>
+              <Font>Calibri,11</Font>
+              <Guid>7cf4172efbcb4e24b40bf0ab937eb93c</Guid>
+              <Margins>0.4,0,0,0</Margins>
+              <Name>Text19</Name>
+              <Page isRef="4" />
+              <Parent isRef="53" />
+              <Text>{dados.Nome}</Text>
+              <TextBrush>Black</TextBrush>
+              <VertAlignment>Center</VertAlignment>
+            </Text19>
+            <Text20 Ref="55" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>16.4,0,2.6,0.4</ClientRectangle>
+              <Conditions isList="true" count="1">
+                <value>dados.Dinheiro,LessThanOrEqualTo,_x0037_80,,Numeric,ForestGreen,Transparent,Calibri_x002C_11_x002C_Bold,True,False,,,None</value>
+              </Conditions>
+              <Font>Calibri,11</Font>
+              <Guid>209071a6bf7746afb289710975c5930d</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0.4,0,0,0</Margins>
+              <Name>Text20</Name>
+              <Page isRef="4" />
+              <Parent isRef="53" />
+              <Text>{dados.Dinheiro}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="56" type="CurrencyFormat" isKey="true">
+                <DecimalDigits>2</DecimalDigits>
+                <DecimalSeparator>,</DecimalSeparator>
+                <GroupSeparator>.</GroupSeparator>
+                <NegativePattern>9</NegativePattern>
+                <PositivePattern>2</PositivePattern>
+                <Symbol>R$</Symbol>
+              </TextFormat>
+              <VertAlignment>Center</VertAlignment>
+            </Text20>
+            <Text21 Ref="57" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>10.6,0,5.8,0.4</ClientRectangle>
+              <Conditions isList="true" count="1">
+                <value>dados.Dinheiro,LessThanOrEqualTo,_x0037_80,,Numeric,ForestGreen,Transparent,Calibri_x002C_11_x002C_Bold,True,False,,,None</value>
+              </Conditions>
+              <Font>Calibri,11</Font>
+              <Guid>d3029e74d97944c999445ad592edbee3</Guid>
+              <Margins>0.4,0,0,0</Margins>
+              <Name>Text21</Name>
+              <Page isRef="4" />
+              <Parent isRef="53" />
+              <Text>{dados.Email}</Text>
+              <TextBrush>Black</TextBrush>
+              <VertAlignment>Center</VertAlignment>
+            </Text21>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <DataRelationName isNull="true" />
+          <DataSourceName>dados</DataSourceName>
+          <FilterOn>False</FilterOn>
+          <Filters isList="true" count="1">
+            <value>Dinheiro,LessThanOrEqualTo,_x0037_80,,Numeric</value>
+          </Filters>
+          <Guid>bfb18378aed344dd9162a5f7e1615132</Guid>
+          <Name>DataBandEstilo</Name>
+          <OddStyle>Zebrado</OddStyle>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <Sort isList="true" count="0" />
+        </DataBandEstilo>
+      </Components>
+      <Conditions isList="true" count="0" />
+      <Guid>41441a890c1b40ff876badac92a98321</Guid>
+      <Margins>1,1,1,1</Margins>
+      <Name>Page1</Name>
+      <PageHeight>29.7</PageHeight>
+      <PageWidth>21</PageWidth>
+      <Report isRef="0" />
+    </Page1>
+  </Pages>
+  <ReferencedAssemblies isList="true" count="8">
+    <value>System.Dll</value>
+    <value>System.Drawing.Dll</value>
+    <value>System.Windows.Forms.Dll</value>
+    <value>System.Data.Dll</value>
+    <value>System.Xml.Dll</value>
+    <value>Stimulsoft.Controls.Dll</value>
+    <value>Stimulsoft.Base.Dll</value>
+    <value>Stimulsoft.Report.Dll</value>
+  </ReferencedAssemblies>
+  <ReportAlias>Report</ReportAlias>
+  <ReportChanged>12/5/2019 10:47:40 PM</ReportChanged>
+  <ReportCreated>12/2/2019 9:56:40 PM</ReportCreated>
+  <ReportFile>D:\Cursos\Stimusoft\Aula05\ReportJson.mrt</ReportFile>
+  <ReportGuid>64d10e68417f441aaab36603eae21fee</ReportGuid>
+  <ReportName>Report</ReportName>
+  <ReportUnit>Centimeters</ReportUnit>
+  <ReportVersion>2019.4.2.0</ReportVersion>
+  <Script>using System;
+using System.Drawing;
+using System.Windows.Forms;
+using System.Data;
+using Stimulsoft.Controls;
+using Stimulsoft.Base.Drawing;
+using Stimulsoft.Report;
+using Stimulsoft.Report.Dialogs;
+using Stimulsoft.Report.Components;
+
+namespace Reports
+{
+    public class Report : Stimulsoft.Report.StiReport
+    {
+        public Report()        {
+            this.InitializeComponent();
+        }
+
+        #region StiReport Designer generated code - do not modify
+		#endregion StiReport Designer generated code - do not modify
+    }
+}
+</Script>
+  <ScriptLanguage>CSharp</ScriptLanguage>
+  <Styles isList="true" count="1">
+    <Zebrado Ref="58" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Brush>LightCyan</Brush>
+      <Conditions isList="true" count="0" />
+      <Font>Arial,8</Font>
+      <Name>Zebrado</Name>
+      <NegativeTextBrush>Red</NegativeTextBrush>
+      <TextBrush>Black</TextBrush>
+    </Zebrado>
+  </Styles>
+</StiSerializer>

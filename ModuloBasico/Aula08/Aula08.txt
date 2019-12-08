@@ -1,0 +1,17 @@
+Aula 08 - Funções
+
+Usar mrt e dados aula 05
+
+Usar formatações no meio do texto (Format)
+
+1. Count
+
+2. Sum
+
+3. Avg
+
+4. Min
+
+5. Max
+
+6. Date

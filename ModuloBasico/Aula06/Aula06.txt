@@ -1,0 +1,6 @@
+Aula 06 - Objetos de Negocio
+
+1. Importar o objeto de negocio e criar um .mrt com layout da aula anterior
+
+2. Testar o soltar e arrastar para criar por padrão um tabela pronta
+

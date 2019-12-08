@@ -1,0 +1,9 @@
+Aula 05 - Manipulação de dados
+
+Relatório de melhores preços (Zebrar os relatorios)
+
+1. Ordenação no cabeçalho das colunas (Header)
+
+2. Filtra banda menor ou igual que 780,00
+
+3. Identificar de verde itens menor ou igual que 780,00

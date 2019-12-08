@@ -1,0 +1,20 @@
+Aula 09 - Formulas
+
+Usar mrt e dados aula 04
+
+1. Choose
+Usado para enumeradores
+Colocar campo perfil
+
+2. IIF
+Usar para saber se é rico ou não (Dinheiro > 1000)
+
+3. Switch
+Usar para escolha quantidade de $$$$
+
+Perfil
+
+Administrador
+Usuário
+Suporte
+Visitante

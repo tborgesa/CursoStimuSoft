@@ -1,0 +1,8 @@
+Aula 07 - Variáveis de sistemas
+
+1. Coloca cabecalho com data e hora no relatorio da aula 05
+
+2. Colocar numero de pagina e total de paginas no rodape
+
+3. Colocar um texto no rodape da primeira pagina
+
