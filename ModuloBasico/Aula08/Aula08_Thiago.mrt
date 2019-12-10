@@ -1,0 +1,589 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<StiSerializer version="1.02" type="Net" application="StiReport">
+  <Dictionary Ref="1" type="Dictionary" isKey="true">
+    <BusinessObjects isList="true" count="0" />
+    <Databases isList="true" count="1">
+      <dados Ref="2" type="Stimulsoft.Report.Dictionary.StiJsonDatabase" isKey="true">
+        <Alias>dados</Alias>
+        <Key />
+        <Name>dados</Name>
+        <PathData>D:\Fontes\Cursos\CursoStimuSoft\ModuloBasico\Aula08\dados.json</PathData>
+      </dados>
+    </Databases>
+    <DataSources isList="true" count="1">
+      <dados Ref="3" type="DataTableSource" isKey="true">
+        <Alias>dados</Alias>
+        <Columns isList="true" count="4">
+          <value>Nome,System.String</value>
+          <value>Email,System.String</value>
+          <value>Contato,System.String</value>
+          <value>Dinheiro,System.Decimal</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Key>d767f6aaebb646f98623f19b727684f1</Key>
+        <Name>dados</Name>
+        <NameInSource>dados.dados</NameInSource>
+      </dados>
+    </DataSources>
+    <Relations isList="true" count="0" />
+    <Report isRef="0" />
+    <Resources isList="true" count="0" />
+    <Variables isList="true" count="0" />
+  </Dictionary>
+  <EngineVersion>EngineV2</EngineVersion>
+  <GlobalizationStrings isList="true" count="0" />
+  <Key>c70bc7f1e5484e69a0840aad470c1fd2</Key>
+  <MetaTags isList="true" count="0" />
+  <Pages isList="true" count="1">
+    <Page1 Ref="4" type="Page" isKey="true">
+      <Border>None;Black;2;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <Components isList="true" count="4">
+        <HeaderBandOrdenacao Ref="5" type="HeaderBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,0.4,19,0.8</ClientRectangle>
+          <Components isList="true" count="1">
+            <Text6 Ref="6" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0,19,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,16,Bold</Font>
+              <Guid>fabe6320f99a44178be43646f6457a82</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0.4,0,0,0</Margins>
+              <Name>Text6</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Text>Relatório melhores preços (Ordenação)</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text6>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Name>HeaderBandOrdenacao</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+        </HeaderBandOrdenacao>
+        <ColumnHeaderOrdenacao Ref="7" type="Stimulsoft.Report.Components.StiColumnHeaderBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,2,19,0.8</ClientRectangle>
+          <Components isList="true" count="3">
+            <Text1 Ref="8" type="Text" isKey="true">
+              <Border>Bottom;Black;1;Solid;False;4;Black</Border>
+              <Brush>Silver</Brush>
+              <ClientRectangle>0,0,10.6,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,12,Bold</Font>
+              <Guid>7765bdeb405a430680e4e9c31882a52d</Guid>
+              <Interaction Ref="9" type="Stimulsoft.Report.Components.StiInteraction" isKey="true">
+                <SortingColumn>DataBandOrdenacao.Nome</SortingColumn>
+              </Interaction>
+              <Margins>0.4,0,0,0</Margins>
+              <Name>Text1</Name>
+              <Page isRef="4" />
+              <Parent isRef="7" />
+              <Text>Nome</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text1>
+            <Text3 Ref="10" type="Text" isKey="true">
+              <Border>Bottom;Black;1;Solid;False;4;Black</Border>
+              <Brush>Silver</Brush>
+              <ClientRectangle>16.4,0,2.6,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,12,Bold</Font>
+              <Guid>94cbd59805a6406c9981598453908a87</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Interaction Ref="11" type="Stimulsoft.Report.Components.StiInteraction" isKey="true">
+                <SortingColumn>DataBandOrdenacao.Dinheiro</SortingColumn>
+              </Interaction>
+              <Margins>0.4,0,0,0</Margins>
+              <Name>Text3</Name>
+              <Page isRef="4" />
+              <Parent isRef="7" />
+              <Text>Preço</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="12" type="CurrencyFormat" isKey="true">
+                <DecimalDigits>2</DecimalDigits>
+                <DecimalSeparator>,</DecimalSeparator>
+                <GroupSeparator>.</GroupSeparator>
+                <NegativePattern>9</NegativePattern>
+                <PositivePattern>2</PositivePattern>
+                <Symbol>R$</Symbol>
+              </TextFormat>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text3>
+            <Text4 Ref="13" type="Text" isKey="true">
+              <Border>Bottom;Black;1;Solid;False;4;Black</Border>
+              <Brush>Silver</Brush>
+              <ClientRectangle>10.6,0,5.8,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,12,Bold</Font>
+              <Guid>0253dd92ba39413591b5cf1914eb53fb</Guid>
+              <Interaction Ref="14" type="Stimulsoft.Report.Components.StiInteraction" isKey="true">
+                <SortingColumn>DataBandOrdenacao.Email</SortingColumn>
+              </Interaction>
+              <Margins>0.4,0,0,0</Margins>
+              <Name>Text4</Name>
+              <Page isRef="4" />
+              <Parent isRef="7" />
+              <Text>Email</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text4>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Name>ColumnHeaderOrdenacao</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+        </ColumnHeaderOrdenacao>
+        <DataBandOrdenacao Ref="15" type="DataBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <BusinessObjectGuid isNull="true" />
+          <ClientRectangle>0,3.6,19,0.4</ClientRectangle>
+          <Components isList="true" count="3">
+            <Text7 Ref="16" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0,10.6,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,11</Font>
+              <Guid>f8e9c3f69a52438eb902e4f2562b9ac5</Guid>
+              <Margins>0.4,0,0,0</Margins>
+              <Name>Text7</Name>
+              <Page isRef="4" />
+              <Parent isRef="15" />
+              <Text>{dados.Nome}</Text>
+              <TextBrush>Black</TextBrush>
+              <VertAlignment>Center</VertAlignment>
+            </Text7>
+            <Text10 Ref="17" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>16.4,0,2.6,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,11</Font>
+              <Guid>9e5ff2f7af8a45e3803ebfcd7c5009ea</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0.4,0,0,0</Margins>
+              <Name>Text10</Name>
+              <Page isRef="4" />
+              <Parent isRef="15" />
+              <Text>{dados.Dinheiro}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="18" type="CurrencyFormat" isKey="true">
+                <DecimalDigits>2</DecimalDigits>
+                <DecimalSeparator>,</DecimalSeparator>
+                <GroupSeparator>.</GroupSeparator>
+                <NegativePattern>9</NegativePattern>
+                <PositivePattern>2</PositivePattern>
+                <Symbol>R$</Symbol>
+              </TextFormat>
+              <VertAlignment>Center</VertAlignment>
+            </Text10>
+            <Text8 Ref="19" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>10.6,0,5.8,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,11</Font>
+              <Guid>d7f86ef2626f4fd8a62616368165f9f8</Guid>
+              <Margins>0.4,0,0,0</Margins>
+              <Name>Text8</Name>
+              <Page isRef="4" />
+              <Parent isRef="15" />
+              <Text>{dados.Email}</Text>
+              <TextBrush>Black</TextBrush>
+              <VertAlignment>Center</VertAlignment>
+            </Text8>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <DataRelationName isNull="true" />
+          <DataSourceName>dados</DataSourceName>
+          <Filters isList="true" count="0" />
+          <Name>DataBandOrdenacao</Name>
+          <OddStyle>Zebrado</OddStyle>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <Sort isList="true" count="0" />
+        </DataBandOrdenacao>
+        <FooterBand1 Ref="20" type="FooterBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,4.8,19,4</ClientRectangle>
+          <Components isList="true" count="7">
+            <Text2 Ref="21" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0.4,19,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,11,Italic</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text2</Name>
+              <Page isRef="4" />
+              <Parent isRef="20" />
+              <Text>Quantidade: {Count()} itens</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text2>
+            <Text5 Ref="22" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,1,19,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,11,Italic</Font>
+              <Guid>8d6507d45e4c4b0e9f4cae54fdb99cd8</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text5</Name>
+              <Page isRef="4" />
+              <Parent isRef="20" />
+              <Text>Total Preço: {Format("{0:C2}", Sum(dados.Dinheiro))}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text5>
+            <Text9 Ref="23" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,1.6,19,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,11,Italic</Font>
+              <Guid>05ff2279a1c14213a189a020f00aafcf</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text9</Name>
+              <Page isRef="4" />
+              <Parent isRef="20" />
+              <Text>Média Preço: {Format("{0:C2}", Avg(dados.Dinheiro))}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text9>
+            <Text11 Ref="24" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,2.2,19,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,11,Italic</Font>
+              <Guid>4f9c1944eba84858a3aa745266c0889b</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text11</Name>
+              <Page isRef="4" />
+              <Parent isRef="20" />
+              <Text>Mais barato: {Format("{0:C2}", Min(dados.Dinheiro))}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text11>
+            <Text12 Ref="25" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,2.8,19,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,11,Italic</Font>
+              <Guid>f0fb3cc6fea9432c8dffb958180d0f00</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text12</Name>
+              <Page isRef="4" />
+              <Parent isRef="20" />
+              <Text>Mais caro: {Format("{0:C2}", Max(dados.Dinheiro))}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text12>
+            <Text13 Ref="26" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,3.4,19,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,11,Italic</Font>
+              <Guid>d681b649c76844eebcbacda004073826</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text13</Name>
+              <Page isRef="4" />
+              <Parent isRef="20" />
+              <Text>Relatório emitido em {Day(Today)} de {MonthName(Today)} de {Year(Today)} às {Hour(Time)}:{Minute(Time)}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text13>
+            <HorizontalLinePrimitive1 Ref="27" type="HorizontalLinePrimitive" isKey="true">
+              <ClientRectangle>0,0.2,19,0.0254</ClientRectangle>
+              <Color>Black</Color>
+              <Conditions isList="true" count="0" />
+              <EndCap Ref="28" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </EndCap>
+              <Name>HorizontalLinePrimitive1</Name>
+              <Page isRef="4" />
+              <Parent isRef="20" />
+              <StartCap Ref="29" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </StartCap>
+            </HorizontalLinePrimitive1>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Name>FooterBand1</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+        </FooterBand1>
+      </Components>
+      <Conditions isList="true" count="0" />
+      <Guid>41441a890c1b40ff876badac92a98321</Guid>
+      <Margins>1,1,1,1</Margins>
+      <Name>Page1</Name>
+      <PageHeight>29.7</PageHeight>
+      <PageWidth>21</PageWidth>
+      <Report isRef="0" />
+    </Page1>
+  </Pages>
+  <ReferencedAssemblies isList="true" count="8">
+    <value>System.Dll</value>
+    <value>System.Drawing.Dll</value>
+    <value>System.Windows.Forms.Dll</value>
+    <value>System.Data.Dll</value>
+    <value>System.Xml.Dll</value>
+    <value>Stimulsoft.Controls.Dll</value>
+    <value>Stimulsoft.Base.Dll</value>
+    <value>Stimulsoft.Report.Dll</value>
+  </ReferencedAssemblies>
+  <ReportAlias>Report</ReportAlias>
+  <ReportChanged>12/9/2019 10:30:22 PM</ReportChanged>
+  <ReportCreated>12/2/2019 9:56:40 PM</ReportCreated>
+  <ReportFile>D:\Fontes\Cursos\CursoStimuSoft\ModuloBasico\Aula08\Aula08_Thiago.mrt</ReportFile>
+  <ReportGuid>da08c24c689743d9b9ea5b73aa392c05</ReportGuid>
+  <ReportName>Report</ReportName>
+  <ReportUnit>Centimeters</ReportUnit>
+  <ReportVersion>2019.4.2.0</ReportVersion>
+  <Script>using System;
+using System.Drawing;
+using System.Windows.Forms;
+using System.Data;
+using Stimulsoft.Controls;
+using Stimulsoft.Base.Drawing;
+using Stimulsoft.Report;
+using Stimulsoft.Report.Dialogs;
+using Stimulsoft.Report.Components;
+
+namespace Reports
+{
+    public class Report : Stimulsoft.Report.StiReport
+    {
+        public Report()        {
+            this.InitializeComponent();
+        }
+
+        #region StiReport Designer generated code - do not modify
+		#endregion StiReport Designer generated code - do not modify
+    }
+}
+</Script>
+  <ScriptLanguage>CSharp</ScriptLanguage>
+  <Styles isList="true" count="13">
+    <Zebrado Ref="30" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Brush>LightCyan</Brush>
+      <Conditions isList="true" count="0" />
+      <Font>Arial,8</Font>
+      <Name>Zebrado</Name>
+      <NegativeTextBrush>Red</NegativeTextBrush>
+      <TextBrush>Black</TextBrush>
+    </Zebrado>
+    <Moray_Report_Title1 Ref="31" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>None;[0:31:53];1;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <CollectionName>Moray</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item24 Ref="32" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <ComponentType>Text, Primitive, Image</ComponentType>
+          <Placement>ReportTitle</Placement>
+          <Type>ComponentType, Placement, PlacementNestedLevel</Type>
+        </Item24>
+      </Conditions>
+      <Font>Arial,14,Bold</Font>
+      <Name>Moray_Report_Title1</Name>
+      <NegativeTextBrush>Red</NegativeTextBrush>
+      <TextBrush>[3:81:103]</TextBrush>
+    </Moray_Report_Title1>
+    <Moray_Report_Title2 Ref="33" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>None;[0:31:53];1;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <CollectionName>Moray</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item26 Ref="34" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <ComponentType>Text, Primitive, Image</ComponentType>
+          <OperationPlacementNestedLevel>GreaterThanOrEqualTo</OperationPlacementNestedLevel>
+          <Placement>ReportTitle</Placement>
+          <PlacementNestedLevel>2</PlacementNestedLevel>
+          <Type>ComponentType, Placement, PlacementNestedLevel</Type>
+        </Item26>
+      </Conditions>
+      <Font>Arial,10,Bold</Font>
+      <Name>Moray_Report_Title2</Name>
+      <NegativeTextBrush>Red</NegativeTextBrush>
+      <TextBrush>[3:81:103]</TextBrush>
+    </Moray_Report_Title2>
+    <Moray_Report_Summary Ref="35" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>None;[0:31:53];1;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <CollectionName>Moray</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item28 Ref="36" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <ComponentType>Text, Primitive, Image</ComponentType>
+          <Placement>ReportSummary</Placement>
+          <Type>ComponentType, Placement</Type>
+        </Item28>
+      </Conditions>
+      <Font>Arial,10,Bold</Font>
+      <Name>Moray_Report_Summary</Name>
+      <NegativeTextBrush>Red</NegativeTextBrush>
+      <TextBrush>[3:81:103]</TextBrush>
+    </Moray_Report_Summary>
+    <Moray_Page_Header Ref="37" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>None;[0:31:53];1;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <CollectionName>Moray</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item30 Ref="38" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <ComponentType>Text, Primitive, Image</ComponentType>
+          <Placement>PageHeader</Placement>
+          <Type>ComponentType, Placement</Type>
+        </Item30>
+      </Conditions>
+      <Font>Arial,10</Font>
+      <Name>Moray_Page_Header</Name>
+      <NegativeTextBrush>Red</NegativeTextBrush>
+      <TextBrush>[3:81:103]</TextBrush>
+    </Moray_Page_Header>
+    <Moray_Page_Footer Ref="39" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>None;[0:31:53];1;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <CollectionName>Moray</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item32 Ref="40" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <ComponentType>Text, Primitive, Image</ComponentType>
+          <Placement>PageFooter</Placement>
+          <Type>ComponentType, Placement</Type>
+        </Item32>
+      </Conditions>
+      <Font>Arial,10</Font>
+      <Name>Moray_Page_Footer</Name>
+      <NegativeTextBrush>Red</NegativeTextBrush>
+      <TextBrush>[3:81:103]</TextBrush>
+    </Moray_Page_Footer>
+    <Moray_Group_Header1 Ref="41" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>None;[0:31:53];1;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <CollectionName>Moray</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item34 Ref="42" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <ComponentType>Text, Primitive, Image</ComponentType>
+          <OperationPlacementNestedLevel>GreaterThanOrEqualTo</OperationPlacementNestedLevel>
+          <Placement>GroupHeader</Placement>
+          <Type>ComponentType, Placement, PlacementNestedLevel</Type>
+        </Item34>
+      </Conditions>
+      <Font>Arial,13,Bold</Font>
+      <Name>Moray_Group_Header1</Name>
+      <NegativeTextBrush>Red</NegativeTextBrush>
+      <TextBrush>[3:81:103]</TextBrush>
+    </Moray_Group_Header1>
+    <Moray_Group_Footer1 Ref="43" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>None;[0:31:53];1;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <CollectionName>Moray</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item36 Ref="44" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <ComponentType>Text, Primitive, Image</ComponentType>
+          <Placement>GroupFooter</Placement>
+          <Type>ComponentType, Placement, PlacementNestedLevel</Type>
+        </Item36>
+      </Conditions>
+      <Font>Arial,13,Bold</Font>
+      <Name>Moray_Group_Footer1</Name>
+      <NegativeTextBrush>Red</NegativeTextBrush>
+      <TextBrush>[3:81:103]</TextBrush>
+    </Moray_Group_Footer1>
+    <Moray_Header1 Ref="45" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>None;[0:31:53];1;Solid;False;4;Black;True</Border>
+      <Brush>[3:81:103]</Brush>
+      <CollectionName>Moray</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item38 Ref="46" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <ComponentType>Text, Primitive, Image</ComponentType>
+          <OperationPlacementNestedLevel>GreaterThanOrEqualTo</OperationPlacementNestedLevel>
+          <Placement>Header</Placement>
+          <Type>ComponentType, Placement, PlacementNestedLevel</Type>
+        </Item38>
+      </Conditions>
+      <Font>Arial,8,Bold</Font>
+      <Name>Moray_Header1</Name>
+      <NegativeTextBrush>Red</NegativeTextBrush>
+      <TextBrush>White</TextBrush>
+    </Moray_Header1>
+    <Moray_Data1 Ref="47" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>None;[0:31:53];1;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <CollectionName>Moray</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item40 Ref="48" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <ComponentType>Text, Primitive, Image, CheckBox</ComponentType>
+          <OperationPlacementNestedLevel>GreaterThanOrEqualTo</OperationPlacementNestedLevel>
+          <Placement>Data</Placement>
+          <Type>ComponentType, Placement, PlacementNestedLevel</Type>
+        </Item40>
+      </Conditions>
+      <Font>Arial,8</Font>
+      <Name>Moray_Data1</Name>
+      <NegativeTextBrush>Red</NegativeTextBrush>
+      <TextBrush>[0:0:0]</TextBrush>
+    </Moray_Data1>
+    <Moray_Data1_Odd_x0020_Style Ref="49" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>None;[0:31:53];1;Solid;False;4;Black</Border>
+      <Brush>[219:245:249]</Brush>
+      <CollectionName>Moray</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item42 Ref="50" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <OperationPlacementNestedLevel>GreaterThanOrEqualTo</OperationPlacementNestedLevel>
+          <Placement>DataOddStyle</Placement>
+          <Type>Placement, PlacementNestedLevel</Type>
+        </Item42>
+      </Conditions>
+      <Font>Arial,8</Font>
+      <Name>Moray_Data1_Odd Style</Name>
+      <NegativeTextBrush>Red</NegativeTextBrush>
+      <TextBrush>[0:0:0]</TextBrush>
+    </Moray_Data1_Odd_x0020_Style>
+    <Moray_Data1_Even_x0020_Style Ref="51" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>None;[0:31:53];1;Solid;False;4;Black</Border>
+      <Brush>[120:219:230]</Brush>
+      <CollectionName>Moray</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item44 Ref="52" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <OperationPlacementNestedLevel>GreaterThanOrEqualTo</OperationPlacementNestedLevel>
+          <Placement>DataEvenStyle</Placement>
+          <Type>Placement, PlacementNestedLevel</Type>
+        </Item44>
+      </Conditions>
+      <Font>Arial,8</Font>
+      <Name>Moray_Data1_Even Style</Name>
+      <NegativeTextBrush>Red</NegativeTextBrush>
+      <TextBrush>[0:0:0]</TextBrush>
+    </Moray_Data1_Even_x0020_Style>
+    <Moray_Footer1 Ref="53" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>Top;[0:31:53];3;Solid;False;4;Black</Border>
+      <Brush>[219:245:249]</Brush>
+      <CollectionName>Moray</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item46 Ref="54" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <ComponentType>Text, Primitive, Image</ComponentType>
+          <Placement>Footer</Placement>
+          <Type>ComponentType, Placement, PlacementNestedLevel</Type>
+        </Item46>
+      </Conditions>
+      <Font>Arial,8</Font>
+      <Name>Moray_Footer1</Name>
+      <NegativeTextBrush>Red</NegativeTextBrush>
+      <TextBrush>[0:0:0]</TextBrush>
+    </Moray_Footer1>
+  </Styles>
+</StiSerializer>
