@@ -1,0 +1,32 @@
+{
+    "dados": [
+        {
+            "Nome": "Rafael",
+            "Email": "rafael@gmail.com",
+            "Contato": "44999999999",
+            "Dinheiro": 1500,
+			"Perfil": 1
+        },
+        {
+            "Nome": "João",
+            "Email": "joao@gmail.com",
+            "Contato": "44999999999",
+            "Dinheiro": 2000,
+			"Perfil": 2
+        },
+        {
+            "Nome": "Pedro",
+            "Email": "pedro@gmail.com",
+            "Contato": "44999999999",
+            "Dinheiro": 50,
+			"Perfil": 3
+        },
+        {
+            "Nome": "Thiago",
+            "Email": "thiago@gmail.com",
+            "Contato": "44999999999",
+            "Dinheiro": 900,
+			"Perfil": 4
+        }
+    ]
+}
